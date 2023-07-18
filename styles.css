@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.page {
+  padding: 40px 0;
+}
+
+.page--title {
+  margin: 0;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  font-size: 32px;
+  color: #03a9f4;
+}
+
+.page--caption {
+  font-size: 24px;
+  font-style: italic;
+  color: #cfccd6;
+}
+
+.page--content {
+}
+
+.page--text {
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 8px;
+  border-radius: 16px;
+  border: none;
+  background-color: #545775;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.button:hover,
+.button:focus-visible {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 1;
+}
+
+.button--icon-container {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+}
+
+.icon {
+  display: inline-block;
+  max-height: 100%;
+  vertical-align: top;
+  fill: currentColor;
+}
+
+/* write your code here */
+.page--back-to-top {
+  padding: 16px 0;
+  text-align: center;
+}
