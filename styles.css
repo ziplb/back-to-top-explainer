@@ -72,7 +72,36 @@ body {
 }
 
 /* write your code here */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .page--back-to-top {
-  padding: 16px 0;
-  text-align: center;
+  position: fixed;
+  z-index: 100;
+  right: 64px;
+  bottom: 64px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  animation-name: bounce;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.page--back-to-top_visible {
+  opacity: 1;
+  visibility: visible;
 }
